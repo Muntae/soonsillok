@@ -1,0 +1,14 @@
+<div>
+  <img src="http://postfiles1.naver.net/20141123_64/bebe_ms1_1416744313304a7Gin_JPEG/%B8%F0%B5%A8%BC%BC%B6%F3.jpg?type=w3" width="150px" height="200px" style="margin-left: auto; margin-right: auto; display: block">
+  <p style="text-align:center"><%= @onepost.name %> (<%= @onepost.job %>)</p>
+</div>
+<hr>
+
+<form action="/home/rewrite" method="get">
+  <!--<input type="hidden" name="post_id" value="<%= @onepost.id %>">-->
+  <% @onepost.infos.each do |i| %>
+    <input type="hidden" name="id" value="<%= i.id %>"
+    <textarea name="re_info"><%= i.info %></textarea>
+    <input type="link" value="<%= i.link %>">
+  <% end %>
+</form>

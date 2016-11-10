@@ -1,0 +1,14 @@
+<div>
+  <img src="http://postfiles1.naver.net/20141123_64/bebe_ms1_1416744313304a7Gin_JPEG/%B8%F0%B5%A8%BC%BC%B6%F3.jpg?type=w3" width="150px" height="200px" style="margin-left: auto; margin-right: auto; display: block">
+  <p style="text-align:center"><%= @info.name %> (<%= @info.job %>)</p>
+</div>
+<% @info.infos.each do |i| %>
+  <p><%= i.info %>  <a style="color: #365899;" href="<%= i.link %>" target="_blank">관련기사</a></p>
+<% end %>
+
+<form action="/home/write_info" method="get">
+  <input type="hidden" name="post_id" value="<%= @info.id %>">
+  <textarea name="info" autofocus></textarea>
+  <label>관련기사</label><input type="link" name="link">
+  <input type="submit" value="완료">
+</form>
