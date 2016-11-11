@@ -45,8 +45,25 @@ a:link{
 }
 a:hover{
     text-decoration: underline;
+    color: #365899;
+}
+a:visited {
+    color: #365899;
 }
 
+.pnu{
+    height:15%;
+    width:15%;
+} 
+
+#secondary{
+	height:100%;
+	
+	}
+	
+.lip{
+    margin-top:15px;
+}
     
     
 @media (min-width: 780px) {

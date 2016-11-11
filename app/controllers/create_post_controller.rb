@@ -1,5 +1,5 @@
 class CreatePostController < ApplicationController
-    layout "dev"
+  layout "dev"
   def create
     
   end

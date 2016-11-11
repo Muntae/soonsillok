@@ -3,6 +3,14 @@
 <head>
   <title>순실록</title>
 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+  <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Include meta tag to ensure proper rendering and touch zooming -->
   <meta name="viewport" content="width=device-width, initial-scale=1 ">
@@ -22,9 +30,9 @@
 </head>
 <body>
 <div data-role="page" id="pageone" >
-  <div data-role="header" class="header" >
+  <div data-role="header" class="header">
     <br>
-    <h1>순실록</h1>
+    <h1><img src="/assets/soonsillok.png" width="30%" height="30%"></h1>
     <% if user_signed_in? %>
       <a href="/users/sign_out">로그아웃</a>
     <% end %>
@@ -41,9 +49,10 @@
   </div>
 
   <div data-role="footer" class="footer">
-    <h1>Supported by <br>
-      <img src="/assets/likelion.png" height="25" width="100">
-    </h1>
+      <br><h3><img src="/assets/mail.png" width="3%" height="3%"> dsfsefefe@naver.com
+     
+      <hr align="center" style="border: solid 1px #005cac; width: 50%;"><img src="/assets/pnu.png" class="pnu" ></h3>
+ 
   </div>
 
 </div>
