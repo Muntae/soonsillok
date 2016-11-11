@@ -2,6 +2,7 @@
   <img src="http://postfiles1.naver.net/20141123_64/bebe_ms1_1416744313304a7Gin_JPEG/%B8%F0%B5%A8%BC%BC%B6%F3.jpg?type=w3" width="150px" height="200px" style="margin-left: auto; margin-right: auto; display: block">
   <p style="text-align:center"><%= @info.name %> (<%= @info.job %>)</p>
 </div>
+<hr>
 <% @info.infos.each do |i| %>
   <p><%= i.info %>  <a style="color: #365899;" href="<%= i.link %>" target="_blank">관련기사</a></p>
 <% end %>

@@ -1,9 +1,9 @@
 <% @postlist.each do |p| %>
   
   <div class=row>
-    <div class="col-xs-2 col-md-2"><p style="text-align :center"><img src="<%= p.profileImg.url %>" width="50" height="50" style="margin-left: auto"></p></div>
-    <div class="col-xs-3 col-md-3 lip" ><p style="text-align :center"><a href="/home/info/<%= p.id %>" style="color: #365899;"><%= p.name %></a></p></div>
-    <div class="col-xs-7 col-md-7 lip"><p style="text-align :center"><%= p.job %></p></div>
+    <div class="col-xs-2 col-md-2" style="padding-right: 0px;"><p style="text-align :center"><img src="<%= p.profileImg.url %>" width="50" height="50" style="margin-left: auto"></p></div>
+    <div class="col-xs-2 col-md-2 lip" style="padding-left: 0px; padding-right: 0px;" ><p style="text-align :center"><a href="/home/info/<%= p.id %>" style="color: #365899;"><%= p.name %></a></p></div>
+    <div class="col-xs-8 col-md-8 lip" style="padding-left: 0px; padding-right: 4px;"><p style="text-align :center"><%= p.job %></p></div>
   <hr align="center" style="border: solid 0.5px #e9ebee; width: 95%;">
   </div>
   
