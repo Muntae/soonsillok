@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'fog'
+gem 'carrierwave'
 gem 'figaro'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

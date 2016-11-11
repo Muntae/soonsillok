@@ -4,6 +4,7 @@ class CreatePosts < ActiveRecord::Migration
       
       t.string :name
       t.string :job
+      t.string :profileImg
       
       t.timestamps null: false
     end
