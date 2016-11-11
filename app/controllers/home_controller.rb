@@ -13,10 +13,10 @@ class HomeController < ApplicationController
   
   def delete
     
-    del_info = Info.find(params[:id])
+    del_info = Post.find(params[:id])
     del_info.destroy
     
-    redirect_to "/home/"
+    redirect_to "/home/list"
   end
   def rewrite
     re_info = Info.find(params[:id])
