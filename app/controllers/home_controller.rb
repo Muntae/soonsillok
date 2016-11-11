@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+  
   def index
     @allpost = Post.all
     
@@ -8,20 +9,7 @@ class HomeController < ApplicationController
     @onepost = Post.find(params[:id])
   end
   
-  def create
-    
-  end
   
-  def write
-    
-    newpost = Post.new
-    newpost.name = params[:name]
-    newpost.job = params[:job]
-    newpost.profileImg = params[:profileImg]
-    newpost.save
-    
-    redirect_to '/home/list'
-  end
   
   def delete
     

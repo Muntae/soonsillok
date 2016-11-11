@@ -6,5 +6,4 @@ CarrierWave.configure do |config|
     region:                'ap-northeast-2'                  # optional, defaults to 'us-east-1'
   }
   config.fog_directory  = 'soonsillok'                          # required
-  
 end
